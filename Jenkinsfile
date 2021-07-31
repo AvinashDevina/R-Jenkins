@@ -6,7 +6,8 @@ pipeline {
 //    any
 //  }
 
-  agent { none }
+  agent  none
+  
   stages {
 
     stage('Master Node') {
