@@ -7,7 +7,7 @@ pipeline {
 //  }
 
   agent  none
-  
+
   stages {
 
     stage('Master Node') {
@@ -26,6 +26,14 @@ pipeline {
       steps {
         sh 'echo Hello'
       }
+    }
+
+    post {
+
+      always {
+        print 'Post Steps'
+      }
+
     }
 
   }
