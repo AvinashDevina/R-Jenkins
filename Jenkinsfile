@@ -55,6 +55,7 @@ pipeline {
       }
       steps {
         sh 'echo ${DEMO_URL}'
+        echo ${SSH_USR}
       }
     }
   }
