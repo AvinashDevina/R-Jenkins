@@ -28,13 +28,14 @@ pipeline {
       }
     }
 
-    post {
+  }
 
-      always {
-        sh 'echo Post Steps'
-      }
+  post {
 
+    always {
+      sh 'echo Post Steps'
     }
 
   }
+
 }
