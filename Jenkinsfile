@@ -45,6 +45,7 @@ pipeline {
 
   environment {
     DEMO_URL = "google.com"
+    SSH = credentials('CENTOS_SSH')
   }
 
   stages {
